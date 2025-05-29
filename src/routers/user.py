@@ -12,7 +12,7 @@ async def get_user(email: str):
     if user is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
     return UserInfo(
-        id=user['id'],
+            id=user['id'],
         name=user['name'],
         email=user['email']
     )
