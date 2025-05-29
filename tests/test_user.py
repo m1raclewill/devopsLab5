@@ -52,7 +52,7 @@ def test_delete_user():
     '''Удаление пользователя'''
     # сначала создаём пользователя
     user = {
-        'name': 'Delete Me',
+            'name': 'Delete Me',
         'email': 'deleteme@example.com'
     }
     client.post("/api/v1/user", json=user)
